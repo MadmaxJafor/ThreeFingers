@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+}
+/* Div contenant le Calendrier */
+#calendrier{
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+    #calendrier img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Colone Liste dates*/
+    #sideDates{
+        background-color: grey;
+        padding-top: 67.8px;
+
+    }
+
+        #sideDates h3{
+            text-align: center;
+            
+        }
+        #sideDates ul li{
+            text-align: center;
+        }
+    /*Colone Liste dates*/
+/* Div contenant le Calendrier */
