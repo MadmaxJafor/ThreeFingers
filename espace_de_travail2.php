@@ -2,7 +2,7 @@
 
 
 
-//Là où Mohamed travail
+Là où Mohamed travail
 
 <section id="formulaire-contact">
     <h2>Pour nous contacter, n'hésitez pas à remplir le formulaire suivant</h2>
