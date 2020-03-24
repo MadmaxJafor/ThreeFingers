@@ -14,7 +14,4 @@
     <header>
         <H1>ONEPAGE DE MUSIQUE</H1>
     </header>
-    <main></main>
-    <footer></footer>
-</body>
-</html>
+    <main>
