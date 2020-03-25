@@ -12,6 +12,20 @@
 </head>
 <body>
     <header>
-        <H1>ONEPAGE DE MUSIQUE</H1>
+        <div id="titre_principal">
+            <div id="logo">
+                <img src="assets/img/logodugroupe.png" alt="Logo du groupe" />
+                <h1>Nom du groupe</h1>    
+            </div>
+            <h2>Description du groupe</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Musique</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Calendrier</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
