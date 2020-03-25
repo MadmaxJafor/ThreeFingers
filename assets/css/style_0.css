@@ -7,6 +7,8 @@ body {
     background: url("../img/fond_jaune.png");
 }
 
+/*header*/
+
 header
 {
     display: flex;
@@ -48,3 +50,31 @@ header h2
     margin-top: 0px;
     font-weight: normal;
 }
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
