@@ -8,6 +8,7 @@
 
 
     <head>
+        <h2>Music</h>
 		<title>Single Song Picture Tutorial</title>
 		<script type="text/javascript" src="app.js"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/style_1.css."/>
@@ -32,7 +33,7 @@
         <div id="player-playlist">
             <div class="playlist-song" id="song-1">
                 <div class="playlist-song-album-art">
-                    <img src="album-art/jendusa.jpg">
+                    <img src="assets/img/photo1.jpg">
                 </div>
                 <div class="playlist-song-information">
                     Song: Song from the Styx<br>
@@ -45,7 +46,7 @@
             </div>
             <div class="playlist-song" id="song-2">
                 <div class="playlist-song-album-art">
-                    <img src="album-art/jendusa.jpg">
+                    <img src="assets/img/photo2.jpg">
                 </div>
                 <div class="playlist-song-information">
                     Song: Man with the Keys<br>
