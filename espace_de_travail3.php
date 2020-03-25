@@ -1,28 +1,12 @@
-    <section>
+    <section id='s3'>
         <div id="calendrier">
             <div id="mainDates">
                 <h2>Nos dates de concert à venir :</h2>
                 <img src="assets/img/calendrier.png" alt="calendrier" >
-                <table>
-                    <tr>
-                        <td><?php
-                        $dM1 = date('d')-1 . date('/m/y');
-                        echo $dM1 ?></td>
-                        <td><?php echo date('d/m/y') ?></td>
-                        <td><?php
-                        $dP1 = date('d')+1 . date('/m/y');
-                        echo $dM1 ?></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                    </tr>
-                    
-                </table>
-            </div>
+<?php
+    require_once("php/functions3.php");
+    calendrier(date("n"),date("Y"));
+?>
             <div id="sideDates">
                 <h3>Dates passées</h3>
                 <ul>
