@@ -14,7 +14,24 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    position:fixed; /* NE PAS OUBLIER LES COORDONNEES top ET left */
+    top:0;
+    left:0;
+    width:100%;
+    opacity:1;
+    padding:25px;
+    height:100px;
+    transition: all 0.5s linear;
+    background: url("../img/fond_jaune.png");
 }
+
+
+#s0
+{
+    margin-top: 300px; 
+}
+
+
 
 #titre_principal
 {
