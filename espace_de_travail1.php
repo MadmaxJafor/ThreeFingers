@@ -1,8 +1,5 @@
 <section id="s1">
-        <h2>Music</h>
-		<title>Single Song Picture Tutorial</title>
-		<script type="text/javascript" src="app.js"></script>
-		<link rel="stylesheet" type="text/css" href="assets/css/style_1.css."/>
+ <h2> Musique </h2>
 
     <div id="player">
         <div id="player-art">
