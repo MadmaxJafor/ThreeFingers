@@ -1,12 +1,8 @@
 <section id="s1">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
         <h2>Music</h>
 		<title>Single Song Picture Tutorial</title>
 		<script type="text/javascript" src="app.js"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/style_1.css."/>
-	</head>
 
     <div id="player">
         <div id="player-art">
