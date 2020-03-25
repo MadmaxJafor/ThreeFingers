@@ -2,3 +2,12 @@ h1 {
     color: red;
     text-align: center;
 }
+
+/*image de fond pour le site web*/
+body
+{
+    color:black;
+    background-color:white;
+    background: url("../img/fond_jaune.png");
+
+}

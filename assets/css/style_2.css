@@ -1,3 +1,4 @@
+/*couleur de fond et mise en page du formulaire*/
 #formulaire-contact
 {
     background-color:grey;
@@ -15,6 +16,7 @@ form
     align-items: center;
 }
 
+/*bouton de validation du formulaire*/
 #bouton 
 {
     background-color: black;
@@ -26,6 +28,8 @@ form
     margin: 0;
     font-weight: bold;
 }
+
+/*Changement de couleur du bouton de validation du formulaire lorsque la souris passe dessus*/
 #bouton:hover 
 {
     color: white;
@@ -37,7 +41,8 @@ textarea
 {
     height: 100px;
 }
-        
+     
+/*mise en page des inputs du formulaire de contact*/
 input, textarea 
 {
     display: flex;
