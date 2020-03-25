@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<section id="s1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
-    <head>
         <h2>Music</h>
 		<title>Single Song Picture Tutorial</title>
 		<script type="text/javascript" src="app.js"></script>
@@ -59,7 +53,7 @@
             </div>
             <div class="playlist-song" id="song-3">
                 <div class="playlist-song-album-art">
-                    <img src="album-art/jendusaep.jpg">
+                    <img src="assets/img/photo3.jpg">
                 </div>
                 <div class="playlist-song-information">
                     Song: Porch Stomp Blues<br>
@@ -123,5 +117,5 @@
             <source src="songs/In%20Search%20Of%20EP/03%20Porch%20Stomp%20Blues.mp3" type="audio/mp3" />
         </audio>
     </div>
-
+    </section>
 </html>
