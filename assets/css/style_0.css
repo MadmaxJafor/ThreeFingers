@@ -2,3 +2,11 @@ h1 {
     color: red;
     text-align: center;
 }
+
+body
+{
+    color:black;
+    background-color: red;
+    background: url("assets/img/fond_jaune.png");
+
+}

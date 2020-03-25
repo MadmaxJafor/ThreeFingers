@@ -12,6 +12,6 @@
 </head>
 <body>
     <header>
-        <H1>ONEPAGE DE MUSIQUE</H1>
+        <H1>ONEPAGEs DE MUSIQUE</H1>
     </header>
     <main>
