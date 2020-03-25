@@ -28,7 +28,7 @@ header
 
 #s0
 {
-    margin-top: 300px; 
+    margin-top: 150px; 
 }
 
 
@@ -74,6 +74,7 @@ nav ul
 {
     list-style-type: none;
     display: flex;
+    padding:0;
 }
 
 nav li
@@ -88,6 +89,7 @@ nav a
     padding-bottom: 3px;
     text-decoration: none;
 }
+
 
 nav a:hover
 {
