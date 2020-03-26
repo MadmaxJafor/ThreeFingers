@@ -68,18 +68,23 @@ header h2
     font-weight: normal;
 }
 
+section {
+    padding-top: 130px;
+}
+
+
 /* Navigation */
 
 nav ul
 {
     list-style-type: none;
     display: flex;
-    padding:0;
+    padding: 0px;
 }
 
 nav li
 {
-    margin-right: 15px;
+    margin-right: 35px;
 }
 
 nav a
