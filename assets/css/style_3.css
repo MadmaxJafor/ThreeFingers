@@ -1,23 +1,27 @@
 body{
-    background-image: url("../img/background.jpg");
+
     background-color: black;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
 }
 
 /*Titres*/
 h2{
     text-align: center;
+    color: white;   
+
 }
 /*Présentation*/
 
-
+#s0{    
+    background-image: url("../img/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
 }
+
 #s0 p{
-    background-color: ;
     text-align: center;
+    background-color:rgba(0,0,0,0.3);
+    color: white;
 }
 
 
