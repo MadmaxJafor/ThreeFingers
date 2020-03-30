@@ -3,6 +3,7 @@ body{
     margin:0;
 }
 
+
 /*Présentation*/
 #s0 {
     background-color: black;
@@ -29,6 +30,10 @@ body{
 
 .content{
     position: relative;
+}
+
+#s3 {
+    display:none;
 }
 /*Présentation*/
 /*Main*/
