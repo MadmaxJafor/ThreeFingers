@@ -3,8 +3,8 @@
 /*image de fond pour le site web*/
 body {
     color:black;
-    background-color:white;
-    background: url("../img/fond_jaune.png");
+    background-color:black;
+
 }
 
 /*header*/
@@ -27,10 +27,6 @@ header
 }
 
 
-#s0
-{
-    margin-top: 150px; 
-}
 
 
 
@@ -70,9 +66,9 @@ header h2
 }
 
 section {
-    padding-top: 130px;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 140px;
 }
 
 

@@ -2,18 +2,16 @@ body{
     background-color: black;
     margin:0;
 }
-
+body img{
+    margin-top: 150px;
+    max-width: 100%;
+    content: cover;}
 
 /*Présentation*/
 #s0 {
-    background-color: black;
-} 
 
-#s0 img{
-    max-width: 100%;
-    content: cover;
+
 }
-
 #s0 h2{
     text-align: center;
     color: white;   
