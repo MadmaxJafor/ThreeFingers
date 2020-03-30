@@ -1,7 +1,29 @@
+body{
+    background-image: url("../img/background.jpg");
+    background-color: black;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+/*Titres*/
+h2{
+    text-align: center;
+}
+/*Présentation*/
+
+
+}
+#s0 p{
+    background-color: ;
+    text-align: center;
+}
+
+
+/*Présentation*/
 /*Main*/
-    h2{
-        text-align: center;
-    }
+
     /* Div contenant le Calendrier */
         #calendrier{
             display: flex;
