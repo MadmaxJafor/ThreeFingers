@@ -20,17 +20,17 @@ body{
 }
 
 #s0 p{
-  
-    top: 500px;
-    max-width: calc(100%/3);
-    margin: 0 auto;
+    
     background-color:rgba(0,0,0,0.3);
     color: white;
+    text-align: center;
 }
 
 .content{
-    position: relative;
-    top:-1221px;
+    position: absolute;
+    top: 140px;
+    max-width: calc(100%/3);
+    right: calc(100%/3);
 }
 
 #s3 {
