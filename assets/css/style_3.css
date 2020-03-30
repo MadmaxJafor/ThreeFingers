@@ -3,8 +3,6 @@ body{
     margin:0;
 }
 
-
-
 /*Présentation*/
 #s0 {
     background-color: black;
@@ -21,12 +19,17 @@ body{
 }
 
 #s0 p{
-    text-align: center;
+  
+    top: 500px;
+    max-width: calc(100%/3);
+    margin: 0 auto;
     background-color:rgba(0,0,0,0.3);
     color: white;
 }
 
-
+.content{
+    position: relative;
+}
 /*Présentation*/
 /*Main*/
 
