@@ -23,6 +23,7 @@ header
     height:100px;
     transition: all 0.5s linear;
     background: url("../img/fond_jaune.png");
+    z-index: 999 ;
 }
 
 
