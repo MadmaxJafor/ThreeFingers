@@ -3,19 +3,21 @@ body{
     background-color: black;
 }
 
-/*Titres*/
-h2{
+
+
+/*Présentation*/
+#s0 {
+    background-color: black;
+} 
+
+#s0 img{
+    max-width: 100%;
+    content: cover;
+}
+
+#s0 h2{
     text-align: center;
     color: white;   
-
-}
-/*Présentation*/
-
-#s0{    
-    background-image: url("../img/background.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 100%;
 }
 
 #s0 p{
