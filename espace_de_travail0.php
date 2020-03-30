@@ -27,7 +27,8 @@
                 <li><a href="#s3">Calendrier</a></li>
             </ul>
         </nav>
-    </header><img src="assets/img/background.jpg" alt="image de groupe">
+    </header>
+    <img id="backgroundImg" src="assets/img/background.jpg" alt="image de groupe">
         <main class="content">
             <section id="s0">
                 

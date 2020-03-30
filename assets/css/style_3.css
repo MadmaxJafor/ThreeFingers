@@ -1,8 +1,9 @@
 body{
     background-color: black;
     margin:0;
+
 }
-body img{
+#backgroundImg{
     margin-top: 150px;
     max-width: 100%;
     content: cover;}
