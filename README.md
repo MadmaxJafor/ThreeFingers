@@ -6,14 +6,14 @@ Arborescence des fichiers :
 
 assets
 
-    css
-        
+    css    
         style.css
 
     img
     musiques
 
 js
+
     app.js
 
 php
