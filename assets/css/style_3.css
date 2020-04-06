@@ -9,10 +9,7 @@ body{
     content: cover;}
 
 /*Présentation*/
-#s0 {
 
-
-}
 #s0 h2{
     text-align: center;
     color: white;   
@@ -32,23 +29,14 @@ body{
     right: calc(100%/3);
 }
 
-#s3 {
-    display:none;
-}
 /*Présentation*/
 /*Main*/
 
     /* Div contenant le Calendrier */
-        #calendrier{
-            display: flex;
-            padding-left: 60px;
-            padding-right: 60px;
-        }
-            #calendrier img{
-                margin-left: auto;
-                margin-right: auto;
-            }
-
+    #calendrier{
+        background-color: grey;
+        text-align: center;
+    }
         /*Colone Liste dates*/
             #sideDates{
                 position: relative;
@@ -74,5 +62,7 @@ body{
 /*Footer*/
 footer p{
     text-align: center;
+    text-decoration: none;
+    
 }
 /*Footer*/
