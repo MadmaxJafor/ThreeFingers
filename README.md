@@ -7,7 +7,8 @@ Arborescence des fichiers :
 assets
 
     css
-       *** style.css
+        
+        style.css
 
     img
     musiques
