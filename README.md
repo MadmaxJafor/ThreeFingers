@@ -4,8 +4,26 @@ AVANT DE CODER, TOUJOURS EFFECTUER UN PULL;
 
 Arborescence des fichiers :
 
-index.php
+assets
+***css
+        style.css
+    img
+    musiques
 
-    espace_de_travail1.php
-    espace_de_travail2.php
-    espace_de_travail3.php
+js
+    app.js
+
+php
+    functions.php
+
+OnePage.sql 	
+README.md 	
+administrator.php 	
+concerts.sql 	
+connectionDb.php 	
+filtreformulaire.php 	
+footer.php 
+header.php 
+index.php 
+pageprotegee.php 
+
