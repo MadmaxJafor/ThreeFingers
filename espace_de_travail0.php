@@ -19,7 +19,7 @@
             </div>
             <h2>Description du groupe</h2>
         </div>
-        <nav>
+        <nav> 
             <ul>
                 <li><a href="#s0">Présentation</a></li>
                 <li><a href="#s1">Musique</a></li>
