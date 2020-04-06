@@ -10,7 +10,7 @@
         <input type="date" name="date" id="">
         <label for="ville">Ville</label>
         <input type="text" name="ville">
-        <label for="adresse">Ville</label>
+        <label for="adresse">Adresse</label>
         <input type="text" name="adresse">
     </form>
 </section>   
