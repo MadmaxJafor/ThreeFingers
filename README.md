@@ -5,8 +5,10 @@ AVANT DE CODER, TOUJOURS EFFECTUER UN PULL;
 Arborescence des fichiers :
 
 assets
-***css
+
+    css
         style.css
+
     img
     musiques
 
@@ -16,14 +18,13 @@ js
 php
     functions.php
 
-OnePage.sql 	
-README.md 	
-administrator.php 	
-concerts.sql 	
-connectionDb.php 	
-filtreformulaire.php 	
-footer.php 
-header.php 
-index.php 
-pageprotegee.php 
-
+OnePage.sql  
+README.md  
+administrator.php  
+concerts.sql  
+connectionDb.php  
+filtreformulaire.php  
+footer.php  
+header.php  
+index.php  
+pageprotegee.php
