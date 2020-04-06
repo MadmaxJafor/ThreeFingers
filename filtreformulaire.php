@@ -6,6 +6,8 @@ function filtrer($name="id")
     return $resultat;
 }
 
+
+// CREATE 
 if ($identifiantFormulaire == "create")
 {
     
@@ -46,3 +48,4 @@ echo "$nom, $prenom, $email, $raison, $message" ;
     }
 
 }
+
