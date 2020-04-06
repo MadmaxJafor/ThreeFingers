@@ -1,37 +1,47 @@
-    <section id='s3'>
-        <div id="calendrier">
-            <div id="mainDates">
-                <h2>Nos dates de concert à venir :</h2>
-                <img src="assets/img/calendrier.png" alt="calendrier" >
-<?php
-    require_once("php/functions3.php");
-    calendrier(date("n"),date("Y"));
-?>
-            <div id="sideDates">
-                <h3>Dates passées</h3>
-                <ul>
-                    <li>4 Février -Le Moulin, Marseille</li>
-                    <li>19 Février - Le Korrigan, Lyunes</li>
-                    <li>20 Mars -L'Usine, Istres</li>
-                </ul>
-                <h3>Aujourd'hui</h3>
-                <ul>
-                    <li>Désolé, aucun concert prévus ce jour.</li>
-                </ul>
-                <h3>Dates à venir</h3>
-                <ul>
-                    <li>27 Mars - Le Coco Velten, Marseille</li>
-                    <li>19 Janvier - Brasserie Communale, Marseille</li>
-                </ul>
-                
-            </div>
-        </div>
-    </section>   
+<section id='s3'>
+    <div id="calendrier">
+    
+
+    <h2>Ajouter une date de concert</h2>
+    <form  class="dateConcert" action="" method="post">
+        <label for="lieu">Salle</label>
+        <input type="text" name="lieu">
+        <label for="date">Date de concert</label>
+        <input type="date" name="date" id="">
+        <label for="ville">Ville</label>
+        <input type="text" name="ville">
+        <label for="adresse">Adresse</label>
+        <input type="text" name="adresse">
+    </form>
+</section>   
+</div>
+
+<script>
+    var baliseConcert   = document.querySelector(".dateConcert");
+    baliseAjax.addEventListener('submit', function(event){
+
+event.preventDefault(); 
+
+var formData = new FormData(baliseConcert);
+
+                fetch('api-ajax.php', {
+    method: 'POST',
+    body: formData,
+})
+.then(function(reponseServeur){
+    return reponseServeur.json();
+})
+.then(function(objetJSON) {
+    console.log(objetJSON);
+});
+});
+</script>
+
 </main>
     <footer>
         <p>Tous droits réservés</p>
     </footer>
-    <script src="js/app.js3"></script>
+    
     <script src="js/app.js"></script>
 </body>
 </html>
