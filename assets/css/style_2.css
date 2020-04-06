@@ -17,7 +17,7 @@ form
 }
 
 /*bouton de validation du formulaire*/
-#bouton 
+form button 
 {
     background-color: black;
     padding: 12px 45px;
