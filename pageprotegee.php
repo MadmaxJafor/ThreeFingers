@@ -36,12 +36,12 @@
 
 
     $requeteSQL =
-    <<<CODESQL
+<<<CODESQL
 
     SELECT * FROM `OnePage`
     ORDER BY message DESC
 
-    CODESQL;
+CODESQL;
 
 
     $tabAssoColonneValeur = [];
@@ -55,7 +55,7 @@
      extract($row);
         
         echo
-    <<<CODEHTML
+<<<CODEHTML
         <tr>
             <td>$id</td> 
             <td>$nom</td>
@@ -64,7 +64,7 @@
             <td>$raison</td>
             <td>$message</td>
         </tr> 
-    CODEHTML;
+CODEHTML;
 
     }    
 
