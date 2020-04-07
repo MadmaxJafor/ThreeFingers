@@ -84,31 +84,14 @@
         <input type="text" name="id" required placeholder="entrez l'id du message à supprimer">
         <button type="submit">envoyer votre message</button>
         </form>
-
-    <?php
-
-    if (count($_REQUEST) > 0)
-    {
-
-        $tabAssoColonneValeur = [
-            "id" => $_REQUEST["id"],
-        ];
-
-        
-        $requeteSQL   =
-    <<<CODESQL
-
-    DELETE FROM OnePage WHERE id = :id
-
-    CODESQL;
-
-        require "connectionDb.php";      
-        echo "Le message a été supprimé ($requeteSQL)";
-    }
-
-    ?>
-
     </section>
+
+    <?php 
+        $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
+        if ($identifiantFormulaire == "delete") {
+            require "php/functions.php"; 
+            } 
+    ?>
 
     <?php
                 }
