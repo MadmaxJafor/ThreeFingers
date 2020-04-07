@@ -45,7 +45,7 @@
 
 
     $tabAssoColonneValeur = [];
-    require "php/connectionDbionDb.php";      // Je charge le code PHP pour envoyer la requete 
+    require "connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
 
     $tabLigne = $pdoStatement->fetchAll(); // Je recupère mon tableau de resultat
 
@@ -107,7 +107,7 @@
 
     CODESQL;
 
-        require "php/connectionDbionDb.php";      
+        require "connectionDb.php";      
         echo "Le message a été supprimé ($requeteSQL)";
     }
 
