@@ -52,12 +52,7 @@
     $sql = 'SELECT * FROM OnePage';
     $req = $pdo->query($sql);
     while($row = $req->fetch()) {
-        $id = $row['id'];
-        $nom = $row['nom'];
-        $prenom = $row['prenom'];
-        $email = $row['email'];
-        $raison = $row['raison'];
-        $message = $row['message'];
+     extract($row);
         
         echo
     <<<CODEHTML
