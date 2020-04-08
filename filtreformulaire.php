@@ -44,10 +44,7 @@ echo "$nom, $prenom, $email, $raison, $message" ;
     }
     else
     {
-        echo "VEUILLEZ REMPLIR TOUS LES CHAMPS OBLIGATOIRES S'IL VOUS PLAIT !!!";
+        echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
     }
 
 }
-
-
-   
