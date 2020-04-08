@@ -1,7 +1,7 @@
 <?php
 
 require 'function.php';
-
+require_once "connectionDb.php";
 // CREATE 
 if ($identifiantFormulaire == "create")
 {
@@ -32,7 +32,7 @@ VALUES
 
 CODESQL;
 
-        require_once "connectionDb.php";
+        
         echo "Votre message a bien été envoyé, nous vous recontacterons bientôt. Merci. ";
     }
     
@@ -55,7 +55,7 @@ DELETE FROM OnePage WHERE id = :id
 
 CODESQL;
 
-    require "connectionDb.php";      
+       
     echo "Le message a bien été supprimé";
     }
 }
@@ -88,7 +88,7 @@ VALUES
 
 CODESQL;
 
-        require "connectionDb.php";
+        
         echo "La date de concert a bien été enregistrée.";
     }
     
