@@ -78,7 +78,7 @@ CODEHTML;
 
     <h2>Ajouter une date de concert</h2>
     
-    <form  id="createDate"" action="" method="post">
+    <form  id="createDate"" action="" method="POST">
         <label for="lieu">Salle</label>
         <input type="text" name="lieu" required>
         <label for="date">Date de concert</label>
@@ -90,11 +90,11 @@ CODEHTML;
         <input type="hidden" name="identifiantFormulaire" value="createDate">
         <button type="submit">Enregistrer la date</button>
     </form>
-    
+
     <?php 
         //affectation de la valeur "delete" à $identifiantFormulaire
         $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
-        //connection à la BDD pour DELETE
+    
         require 'php/filtreformulaire.php'; 
     ?>
 

@@ -67,7 +67,7 @@ if ($identifiantFormulaire == "createDate")
     $tabAssoColonneValeur = [
         "lieu"      => filtrer("lieu"),
         "date"      => filtrer("date"),
-        "ville "    => filtrer("ville"),
+        "ville"     => filtrer("ville"),
         "adresse"   => filtrer("adresse"),
     ];
     
@@ -88,7 +88,7 @@ VALUES
 
 CODESQL;
 
-        require_once "connectionDb.php";
+        require "connectionDb.php";
         echo "La date de concert a bien été enregistrée.";
     }
     
