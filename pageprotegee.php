@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style_pageprotegee.css">
+    <title>Administration des messages reçu</title>
 </head>
-<body>
+<body> 
     
 <?php
     // si le mot de passe est correct, on affiche le contenu protégé
-    if(isset($_POST["mdp"])) {
-        if ($_POST["mdp"] == "momolechampion")
+    if(isset($_REQUEST["mdp"])) {
+        if ($_REQUEST["mdp"]  == "momo")
             {
 ?>
 
     <h1>PARTIE ADMINISTRATIF</h1>
     <section id="listeMessages">
         <h2>Listes des messages reçu</h2>
-        <table>
+        <table class="read">
             <thead>                    
                 <tr>                    
                     <td>id</td>
                     <td>nom</td>
+                    <td>prenom</td>
                     <td>email</td>
+                    <td>raison</td>
                     <td>message</td>
                 </tr>
             </thead>
@@ -97,8 +100,8 @@ CODEHTML;
                 }
     }
     // si le mot de passe est incorrect, on affiche un message
-    if(isset($_POST["mdp"])) {
-        if ($_POST["mdp"] !== "momolechampion")
+    if(isset($_REQUEST["mdp"])) {
+        if ($_REQUEST["mdp"] !== "momo")
             { echo "mot de passe erroné";}
     }
     ?>
