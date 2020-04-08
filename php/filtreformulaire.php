@@ -1,7 +1,7 @@
 <?php
 
 require 'function.php';
-require_once "connectionDb.php";
+
 // CREATE 
 if ($identifiantFormulaire == "create")
 {
@@ -55,7 +55,7 @@ DELETE FROM OnePage WHERE id = :id
 
 CODESQL;
 
-       
+          
     echo "Le message a bien été supprimé";
     }
 }
@@ -96,3 +96,4 @@ CODESQL;
         echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
     }
 }
+require "connectionDb.php";
