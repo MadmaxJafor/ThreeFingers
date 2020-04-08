@@ -85,8 +85,8 @@ CODEHTML;
     <?php 
         $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
         if ($identifiantFormulaire == "delete") {
-            require "php/functions.php"; 
-            } 
+            require 'php/filtreformulaire.php';
+        } 
     ?>
 
     </body>

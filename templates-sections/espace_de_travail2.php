@@ -16,7 +16,7 @@
                 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
                 if ($identifiantFormulaire == "create")
                 {
-                    require "php/functions.php"; 
+                    require "php/filtreformulaire.php"; 
                 }                        
             ?>
         </div>

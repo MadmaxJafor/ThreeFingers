@@ -1,11 +1,6 @@
 <?php
 
-function filtrer($name="id")
-{
-    $resultat = $_REQUEST[$name] ?? "";
-    return $resultat;
-}
-
+require 'function.php';
 
 // CREATE 
 if ($identifiantFormulaire == "create")
@@ -38,7 +33,7 @@ VALUES
 CODESQL;
 
 echo "$nom, $prenom, $email, $raison, $message" ;
-        require_once "fonctionrequeteSQL.php";
+        require_once "connectionDb.php";
 
         echo "Votre message a bien été envoyé, nous vous recontacterons bientôt. Merci. ";
     }
@@ -47,4 +42,23 @@ echo "$nom, $prenom, $email, $raison, $message" ;
         echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
     }
 
+}
+
+//DELETE
+if ($identifiantFormulaire == "delete") {
+    if (count($_REQUEST) > 0) {
+        $tabAssoColonneValeur = [
+            "id" => $_REQUEST["id"],
+        ];
+    
+        $requeteSQL   =
+<<<CODESQL
+
+DELETE FROM OnePage WHERE id = :id
+
+CODESQL;
+
+    require "connectionDb.php";      
+    echo "Le message a bien été supprimé";
+    }
 }
