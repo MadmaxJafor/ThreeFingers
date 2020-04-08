@@ -32,16 +32,13 @@ VALUES
 
 CODESQL;
 
-echo "$nom, $prenom, $email, $raison, $message" ;
         require_once "connectionDb.php";
-
         echo "Votre message a bien été envoyé, nous vous recontacterons bientôt. Merci. ";
     }
-    else
-    {
+    
+    else {
         echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
     }
-
 }
 
 //DELETE
