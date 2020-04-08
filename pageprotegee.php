@@ -11,9 +11,8 @@
     
 <?php
     // si le mot de passe est correct, on affiche le contenu protégé
-    if(isset($_REQUEST["mdp"])) {
-        if ($_REQUEST["mdp"]  == "momo")
-            {
+    //if(isset($_REQUEST["mdp"])) {
+        //if ($_REQUEST["mdp"]  == "momo") {
 ?>
 
     <h1>PARTIE ADMINISTRATIF</h1>
@@ -85,6 +84,7 @@ CODEHTML;
         <h2>supprimer un message</h2>
         <form id="delete" action="" method="POST">
         <input type="text" name="id" required placeholder="entrez l'id du message à supprimer">
+        <input type="hidden" name="identifiantFormulaire" value="delete">
         <button type="submit">envoyer votre message</button>
         </form>
     </section>
@@ -97,8 +97,8 @@ CODEHTML;
     ?>
 
     <?php
-                }
-    }
+                //}
+    //}
     // si le mot de passe est incorrect, on affiche un message
     if(isset($_REQUEST["mdp"])) {
         if ($_REQUEST["mdp"] !== "momo")

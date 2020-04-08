@@ -49,23 +49,5 @@ echo "$nom, $prenom, $email, $raison, $message" ;
 
 }
 
-//DELETE 
-    if ($identifiantFormulaire == "delete") {
-
-        $tabAssoColonneValeur = [
-            "id" => $_REQUEST["id"],
-        ];
-
-        
-        $requeteSQL   =
-    <<<CODESQL
-
-    DELETE FROM OnePage WHERE id = :id
-
-    CODESQL;
-
-        require "connectionDb.php";      
-        echo "Le message a été supprimé ($requeteSQL)";
-    }
 
    
