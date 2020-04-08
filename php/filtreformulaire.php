@@ -59,3 +59,40 @@ CODESQL;
     echo "Le message a bien été supprimé";
     }
 }
+
+//Code d'ajout d'une ligne dans la table concerts
+if ($identifiantFormulaire == "createDate")
+{
+    
+    $tabAssoColonneValeur = [
+        "lieu"      => filtrer("lieu"),
+        "date"      => filtrer("date"),
+        "ville "    => filtrer("ville"),
+        "adresse"   => filtrer("adresse"),
+    ];
+    
+    extract($tabAssoColonneValeur);
+
+    if ($lieu       != "" 
+        && $date    != ""
+        && $ville   != ""
+        && $adresse != "")
+    {
+        $requeteSQL   =
+<<<CODESQL
+
+INSERT INTO concerts
+( lieu, date, ville, adresse)
+VALUES
+( :lieu, :date, :ville, :adresse) 
+
+CODESQL;
+
+        require_once "connectionDb.php";
+        echo "La date de concert a bien été enregistrée.";
+    }
+    
+    else {
+        echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
+    }
+}
