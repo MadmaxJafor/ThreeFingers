@@ -1,4 +1,4 @@
-<div id="s2">
+<div id="s2" class="navigation">
     <h2> Contact </h2>
     <section id="formulaire-contact">
         <h3>Pour nous contacter, n'hésitez pas à remplir le formulaire suivant: </h3>

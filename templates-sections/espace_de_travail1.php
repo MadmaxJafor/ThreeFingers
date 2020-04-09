@@ -1,4 +1,4 @@
-<div id="s1">
+<div id="s1" class="navigation">
  <h2> Musique </h2>
 
     <div id="player">

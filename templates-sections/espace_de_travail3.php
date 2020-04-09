@@ -1,5 +1,5 @@
 
-<section id='s3'>
+<div id='s3' class="navigation">
     <h2>Liste des concerts</h2>
         <div id='listeConcerts'>
         <table class="listeDate">
@@ -52,7 +52,7 @@ CODEHTML;
             </tbody>
         </table>
 </div>
-</section>   
+</div>   
 
 
 <script>
