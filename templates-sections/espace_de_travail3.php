@@ -1,9 +1,59 @@
 
 <section id='s3'>
-    <div id="calendrier">
-    
-    </br>
-    <h2>Concerts prévus</h2>
+<section id="listeConcerts">
+
+        <h2>Liste des concerts</h2>
+        <table class="read">
+            <thead>                    
+                <tr>                    
+                    <td>Lieu</td>
+                    <td>Date</td>
+                    <td>Ville</td>
+                    <td>Adresse</td>
+                </tr>
+            </thead>
+            <tbody>                       
+
+    <!-- Connection à la BDD pour lecture des messages reçus : READ -->
+
+    <?php
+
+    $requeteSQL =
+<<<CODESQL
+
+    SELECT * FROM `concerts`
+    ORDER BY message DESC
+
+CODESQL;
+
+    $tabAssoColonneValeur = [];
+    require "connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
+
+    $tabLigne = $pdoStatement->fetchAll(); // Je recupère mon tableau de resultat
+
+    $sql = 'SELECT * FROM concerts';
+    $req = $pdo->query($sql);
+    while($row = $req->fetch()) {
+     extract($row);
+        
+        echo
+<<<CODEHTML
+        <tr>
+            <td>$lieu</td>
+            <td>$date</td>
+            <td>$ville</td>
+            <td>$adresse</td> 
+        </tr> 
+CODEHTML;
+
+    }    
+
+    $req->closeCursor();
+
+    ?>
+            </tbody>
+        </table>
+    </section>
     
 
 </section>   
