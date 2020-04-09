@@ -53,9 +53,3 @@ CODEHTML;
         </table>
 </div>
 </div>   
-
-
-<script>
-  
-</script>
-
