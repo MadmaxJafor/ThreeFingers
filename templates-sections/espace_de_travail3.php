@@ -1,9 +1,8 @@
 
 <section id='s3'>
-<section id="listeConcerts">
-
-        <h2>Liste des concerts</h2>
-        <table class="listDate">
+    <h2>Liste des concerts</h2>
+        <div id='listeConcerts'>
+        <table class="listeDate">
             <thead>                    
                 <tr id=titres>                    
                     <td>Lieu</td>
@@ -13,7 +12,6 @@
                 </tr>
             </thead>
             <tbody>                       
-
     <!-- Connection à la BDD pour lecture des messages reçus : READ -->
 
     <?php
@@ -53,11 +51,9 @@ CODEHTML;
     ?>
             </tbody>
         </table>
-    </section>
-    
-
-</section>   
 </div>
+</section>   
+
 
 <script>
   
