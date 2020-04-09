@@ -15,9 +15,9 @@
         <div id="titre_principal">
             <div id="logo">
                 <img src="assets/img/logodugroupe.png" alt="Logo du groupe" />
-                <h1>Nom du groupe</h1>    
+                <h1>RandomChild</h1>    
             </div>
-            <h2>Description du groupe</h2>
+            <h2></h2>
         </div>
         <nav> 
             <ul>
