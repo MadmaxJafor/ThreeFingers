@@ -24,6 +24,7 @@ body{
 
 .content{
     position: absolute;
+    height: max-content;
     top: 140px;
     max-width: calc(100%/3);
     right: calc(100%/3);
