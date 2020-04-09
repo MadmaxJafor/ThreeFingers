@@ -18,7 +18,7 @@
                     <td>Email</td>
                     <td>Raison du message</td>
                     <td>Message</td>
-                    <td>suppression</td>
+                    <td>Suppression</td>
                 </tr>
             </thead>
             <tbody>                       
