@@ -184,7 +184,7 @@ CODEHTML;
             formDelete.submit();
         }
     });
-
+    
 });
 
 </script>
