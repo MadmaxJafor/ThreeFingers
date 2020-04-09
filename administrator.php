@@ -76,6 +76,8 @@ CODEHTML;
         </form>
     </section>
 
+<!-- Formulaire d'ajout d'une date-->
+
     <h2>Ajouter une date de concert</h2>
     
     <form  id="createDate"" action="" method="POST">
@@ -83,6 +85,8 @@ CODEHTML;
         <input type="text" name="lieu" required>
         <label for="date">Date de concert</label>
         <input type="date" name="date" id="" required>
+        <label for="time">Heure du concert</label>
+        <input type="time" name="time" id="" required>
         <label for="ville">Ville</label>
         <input type="text" name="ville" required>
         <label for="adresse">Adresse</label>
@@ -90,6 +94,64 @@ CODEHTML;
         <input type="hidden" name="identifiantFormulaire" value="createDate">
         <button type="submit">Enregistrer la date</button>
     </form>
+
+<!--Lister dates de concerts-->
+
+<section id="listeConcerts">
+        <h2>Liste des concerts</h2>
+        <table class="read">
+            <thead>                    
+                <tr>                    
+                    <td>Lieu</td>
+                    <td>Date</td>
+                    <td>Ville</td>
+                    <td>Adresse</td>
+                    <td>Suppression</td>
+                </tr>
+            </thead>
+            <tbody>                       
+
+    <!-- Connection à la BDD pour lecture des messages reçus : READ -->
+
+    <?php
+
+    $requeteSQL =
+<<<CODESQL
+
+    SELECT * FROM `concerts`
+    ORDER BY message DESC
+
+CODESQL;
+
+    $tabAssoColonneValeur = [];
+    require "connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
+
+    $tabLigne = $pdoStatement->fetchAll(); // Je recupère mon tableau de resultat
+
+    $sql = 'SELECT * FROM concerts';
+    $req = $pdo->query($sql);
+    while($row = $req->fetch()) {
+     extract($row);
+        
+        echo
+<<<CODEHTML
+        <tr>
+            <td>$lieu</td>
+            <td>$date</td>
+            <td>$ville</td>
+            <td>$adresse</td>
+            <td><button data-id="$id" class="delete">Supprimer</button></td>  
+        </tr> 
+CODEHTML;
+
+    }    
+
+    $req->closeCursor();
+
+    ?>
+            </tbody>
+        </table>
+    </section>
 
     <?php 
         //affectation de la valeur "delete" à $identifiantFormulaire

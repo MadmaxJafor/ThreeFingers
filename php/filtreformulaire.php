@@ -7,8 +7,8 @@ if ($identifiantFormulaire == "create")
 {
     
     $tabAssoColonneValeur = [
-        "nom"            => filtrer("nom"),
-        "prenom"         => filtrer("prenom"),
+        "nom"            => maj(filtrer("nom")),
+        "prenom"         => maj(filtrer("prenom")),
         "email"          => filtrer("email"),
         "raison"         => filtrer("raison"),
         "message"        => filtrer("message"),
@@ -62,12 +62,12 @@ CODESQL;
     }
 }
 
-//TRAITEMENT DU FORMULAIRE D'AJOU
+//TRAITEMENT DU FORMULAIRE D'AJOUT D'UNE DATE
 if ($identifiantFormulaire == "createDate")
 {
     
     $tabAssoColonneValeur = [
-        "lieu"      => filtrer("lieu"),
+        "lieu"      => maj(filtrer("lieu")),
         "date"      => filtrer("date"),
         "ville"     => maj(filtrer("ville")),
         "adresse"   => filtrer("adresse"),
@@ -98,5 +98,9 @@ CODESQL;
         echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
     }
 }
+
+//UPDATE D'UNE DATE DE CONCERT
+
+
 //ENVOI DES FORMULAIRES
 require "connectionDb.php";
