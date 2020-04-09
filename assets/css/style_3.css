@@ -32,31 +32,37 @@ body{
 /*Présentation*/
 /*Main*/
 
-    /* Div contenant le Calendrier */
-    #calendrier{
-        background-color:#181616;
-        text-align: center;
-    }
-        /*Colone Liste dates*/
-            #sideDates{
-                position: relative;
-                top :70px;
-                height: 747px;
-                margin-left: 60px;
-                background-color:#181616;
-            }
+/* Div contenant les dates de concerts */
+#listeConcerts{
+    background-color: #181616;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
 
-                #sideDates h3{
-                    text-align: center;
-                }
+table{
+    width: 100%;
+}
 
-                #sideDates ul li{
-                    text-align: center;
-                }
-        /*Colone Liste dates*/
+.listDate tr{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
 
-    /* Div contenant le Calendrier */
+.listDate tr td{
+    width: calc(100%/5);
+}
+.adresses{
+    width: calc((100%/5)*2) !important;
+}
 
+#titres td{
+    font-size: large;
+    font-weight: bold;
+}
 /*Main*/
 
 /*Footer*/

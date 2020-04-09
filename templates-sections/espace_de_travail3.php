@@ -3,13 +3,13 @@
 <section id="listeConcerts">
 
         <h2>Liste des concerts</h2>
-        <table class="read">
+        <table class="listDate">
             <thead>                    
-                <tr>                    
+                <tr id=titres>                    
                     <td>Lieu</td>
                     <td>Date</td>
                     <td>Ville</td>
-                    <td>Adresse</td>
+                    <td class="adresses">Adresse</td>
                 </tr>
             </thead>
             <tbody>                       
@@ -42,7 +42,7 @@ CODESQL;
             <td>$lieu</td>
             <td>$date</td>
             <td>$ville</td>
-            <td>$adresse</td> 
+            <td class ='adresses'>$adresse</td> 
         </tr> 
 CODEHTML;
 
