@@ -2,7 +2,7 @@
 
 require 'function.php';
 
-// CREATE 
+// TRAITEMENT DU FORMULAIRE DE CONTACT
 if ($identifiantFormulaire == "create")
 {
     
@@ -21,7 +21,8 @@ if ($identifiantFormulaire == "create")
         && $email != ""
         && $raison != ""
         && $message != "")
-    {
+    { 
+        //PREPARATION REQUETE SQL
         $requeteSQL   =
 <<<CODESQL
 
@@ -32,7 +33,7 @@ VALUES
 
 CODESQL;
 
-        
+        //FEEDBACK UTILISATEUR
         echo "Votre message a bien été envoyé, nous vous recontacterons bientôt. Merci. ";
     }
     
@@ -41,13 +42,14 @@ CODESQL;
     }
 }
 
-//DELETE
-if ($identifiantFormulaire == "delete") {
+//TRAITEMENT DU FORMULAIRE DE SUPRESSION DE MESSAGE
+if ($identifiantFormulaire == "delete") 
+{
     if (count($_REQUEST) > 0) {
         $tabAssoColonneValeur = [
             "id" => $_REQUEST["id"],
         ];
-    
+        //PREPARATION REQUETE SQL   
         $requeteSQL   =
 <<<CODESQL
 
@@ -55,19 +57,19 @@ DELETE FROM OnePage WHERE id = :id
 
 CODESQL;
 
-          
+    //FEED BACK UTILISATEUR
     echo "Le message a bien été supprimé";
     }
 }
 
-//Code d'ajout d'une ligne dans la table concerts
+//TRAITEMENT DU FORMULAIRE D'AJOU
 if ($identifiantFormulaire == "createDate")
 {
     
     $tabAssoColonneValeur = [
         "lieu"      => filtrer("lieu"),
         "date"      => filtrer("date"),
-        "ville"     => filtrer("ville"),
+        "ville"     => maj(filtrer("ville")),
         "adresse"   => filtrer("adresse"),
     ];
     
@@ -88,7 +90,7 @@ VALUES
 
 CODESQL;
 
-        
+        //FEEDBACK UTILISATEUR
         echo "La date de concert a bien été enregistrée.";
     }
     
@@ -96,4 +98,5 @@ CODESQL;
         echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
     }
 }
+//ENVOI DES FORMULAIRES
 require "connectionDb.php";
