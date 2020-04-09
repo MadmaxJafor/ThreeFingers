@@ -34,7 +34,7 @@ body{
 
     /* Div contenant le Calendrier */
     #calendrier{
-        background-color: grey;
+        background-color:#181616;
         text-align: center;
     }
         /*Colone Liste dates*/
@@ -43,7 +43,7 @@ body{
                 top :70px;
                 height: 747px;
                 margin-left: 60px;
-                background-color: grey;
+                background-color:#181616;
             }
 
                 #sideDates h3{

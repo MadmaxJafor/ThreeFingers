@@ -70,6 +70,7 @@ CODEHTML;
 
     <section class="cache">
         <form id="delete" action="" method="POST">
+        <label for="id">identifiantMessage</label>
         <input type="text" name="id" required placeholder="entrez l'id du message à supprimer">
         <input type="hidden" name="identifiantFormulaire" value="delete">
         <button type="submit">envoyer votre message</button>
