@@ -1,4 +1,4 @@
-<section id="s1">
+<div id="s1">
  <h2> Musique </h2>
 
     <div id="player">
@@ -110,4 +110,4 @@
             <source src="songs/In%20Search%20Of%20EP/03%20Porch%20Stomp%20Blues.mp3" type="audio/mp3" />
         </audio>
     </div>
-    </section>
+</div>

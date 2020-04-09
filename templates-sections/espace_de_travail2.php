@@ -1,8 +1,7 @@
-<!-- ENVOIE DU FORMULAIRE SUR LA BDD : CREATE -->
-<section id="s2">
-<h2> Contact </h2>
+<div id="s2">
+    <h2> Contact </h2>
     <section id="formulaire-contact">
-        <h2>Pour nous contacter, n'hésitez pas à remplir le formulaire suivant: </h2>
+        <h3>Pour nous contacter, n'hésitez pas à remplir le formulaire suivant: </h3>
         <form id="create" action="#formulaire-contact" method="POST">
             <label for="nom">Entrez votre nom</label>
             <input type="text" name="nom" required placeholder="Dupont">
@@ -27,5 +26,5 @@
         </div>
         </form>
     </section>
-</section>
+</div>
 
