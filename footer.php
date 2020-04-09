@@ -24,15 +24,16 @@
                         <h3>Company Name</h3>
                         <p>We are not belongs to this World</p>
                     </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    <div class="col item social">
+                        <a href="#"><i class="icon ion-social-facebook"></i>
+                    </a><a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                    <a href="#"><i class="icon ion-social-instagram"></i></a>
                 </div>
+                <div>
                 <p class="copyright">ThreeFingers © 2020</p>
             </div>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-            <p>simplon.online.fr &copy; 2018</p>
+            <p>ThreeFingers &copy; 2020</p>
         </footer>
     
     <script src="js/app.js"></script>
