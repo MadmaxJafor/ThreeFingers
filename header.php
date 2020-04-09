@@ -14,7 +14,7 @@
     <header>
         <div id="titre_principal">
             <div id="logo">
-                <a href="administrator.php"><img src="assets/img/logodugroupe.png" alt="Logo du groupe" /></a>
+                <a href="administrator.php"><img src="assets/img/logodugroupeBlanc.png" alt="Logo du groupe" /></a>
                 <h1>RandomChild</h1>    
             </div>
             <h2></h2>

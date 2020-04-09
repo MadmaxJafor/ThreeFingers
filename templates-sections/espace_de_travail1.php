@@ -20,7 +20,7 @@
         <div id="player-playlist">
             <div class="playlist-song" id="song-1">
                 <div class="playlist-song-album-art">
-                    <img src="assets/img/photo1.jpg">
+                    <img src="assets\img\coverAlbum.jpg">
                 </div>
                 <div class="playlist-song-information">
                     Song: Song from the Styx<br>
@@ -100,8 +100,8 @@
         }
     </script>
     <div id="amplitude-playlist">
-        <audio id="1" amplitude-artist="Jake Jendusa" amplitude-title="Song from the Styx" amplitude-album="In Search Of" amplitude-audio-type="song" amplitude-album-art-url="album-art/jendusa.jpg" amplitude-visual-element-id="song-1">
-            <source src="songs/In%20Search%20Of/01%20Song%20from%20the%20Styx.mp3" type="audio/mp3" />
+        <audio id="1" amplitude-artist="Random Child" amplitude-title="Song from the Styx" amplitude-album="In Search Of" amplitude-audio-type="song" amplitude-album-art-url="assets\img\coverAlbum.jpg" amplitude-visual-element-id="song-1">
+            <source src="../assets/musiques/adore.wav" type="audio/wav" />
         </audio>
         <audio id="2" amplitude-artist="Jake Jendusa" amplitude-title="Man with the Keys" amplitude-album="In Search Of" amplitude-audio-type="song" amplitude-album-art-url="album-art/jendusa.jpg" amplitude-visual-element-id="song-2" preload="none">
             <source src="songs/In%20Search%20Of/02%20Man%20with%20the%20Keys.mp3" type="audio/mp3" />

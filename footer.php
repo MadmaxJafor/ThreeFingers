@@ -1,6 +1,6 @@
 </main>
     <footer>
-        <p>Tous droits réservés</p>
+        <a href='legal.php'>Tous droits réservés</a>
     </footer>
     
     <script src="js/app.js"></script>

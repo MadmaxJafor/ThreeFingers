@@ -11,9 +11,7 @@ body {
 
 header
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+
     position:fixed; /* NE PAS OUBLIER LES COORDONNEES top ET left */
     top:0;
     left:0;
