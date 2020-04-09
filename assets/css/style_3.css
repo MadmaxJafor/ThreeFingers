@@ -23,7 +23,6 @@ body{
 }
 
 .content{
-    position: absolute;
     top: 140px;
     max-width: calc(100%/3);
     right: calc(100%/3);
