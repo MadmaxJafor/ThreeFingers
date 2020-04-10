@@ -73,7 +73,7 @@ CODEHTML;
         <label for="id">identifiantMessage</label>
         <input type="text" name="id" required placeholder="entrez l'id du message à supprimer">
         <input type="hidden" name="identifiantFormulaire" value="delete">
-        <button type="submit">envoyer votre message</button>
+        <button type="submit">Envoyez votre message</button>
         </form>
     </section>
 
@@ -155,7 +155,7 @@ CODEHTML;
     </section>
 
     <?php 
-        //affectation de la valeur "delete" à $identifiantFormulaire
+        //affectation de la valeur "delete" à la requête
         $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
     
         require 'php/filtreformulaire.php'; 

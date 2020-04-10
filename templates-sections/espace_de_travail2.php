@@ -16,12 +16,12 @@
             <input type="hidden" name="identifiantFormulaire" value="create">
             <button id="bouton" type="submit">Envoyez votre message</button>
             <div class="confirmation">
+                
             <?php 
+                //Affectation de la valeur "create" à la requête
                 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
-                if ($identifiantFormulaire == "create")
-                {
-                    require "php/filtreformulaire.php"; 
-                }                        
+                //Envoie du formulaire à la bdd
+                require "php/filtreformulaire.php";                        
             ?>
         </div>
         </form>

@@ -2,7 +2,7 @@
 
 require 'function.php';
 
-// TRAITEMENT DU FORMULAIRE DE CONTACT
+// Traitement du formulaire de contact
 if ($identifiantFormulaire == "create")
 {
     
@@ -16,13 +16,13 @@ if ($identifiantFormulaire == "create")
     
     extract($tabAssoColonneValeur);
 
-    if ($nom != "" 
-        && $prenom != ""
-        && $email != ""
-        && $raison != ""
+    if ($nom        != "" 
+        && $prenom  != ""
+        && $email   != ""
+        && $raison  != ""
         && $message != "")
     { 
-        //PREPARATION REQUETE SQL
+        //Preparation requête SQL
         $requeteSQL   =
 <<<CODESQL
 
@@ -33,23 +33,23 @@ VALUES
 
 CODESQL;
 
-        //FEEDBACK UTILISATEUR
-        echo "Votre message a bien été envoyé, nous vous recontacterons bientôt. Merci. ";
+        //Feedback utilisateur 
+        echo '<p style="color:white;">Votre message a bien été envoyé, nous vous recontacterons bientôt. Merci.</p>';
     }
     
     else {
-        echo "Veuillez remplir tous les champs obligatoire s'il vous plait !";
+        echo '<p style="color:white;">Veuillez remplir tous les champs obligatoire s\'il vous plait !</p>';
     }
 }
 
-//TRAITEMENT DU FORMULAIRE DE SUPRESSION DE MESSAGE
+//Traitement du formulaire de suppression de message
 if ($identifiantFormulaire == "delete") 
 {
     if (count($_REQUEST) > 0) {
         $tabAssoColonneValeur = [
             "id" => $_REQUEST["id"],
         ];
-        //PREPARATION REQUETE SQL   
+        //Preparation requête SQL
         $requeteSQL   =
 <<<CODESQL
 
@@ -57,12 +57,12 @@ DELETE FROM OnePage WHERE id = :id
 
 CODESQL;
 
-    //FEED BACK UTILISATEUR
+    //Feedback administrateur
     echo "Le message a bien été supprimé";
     }
 }
 
-//TRAITEMENT DU FORMULAIRE D'AJOUT D'UNE DATE
+//Traitement du formulaire d'ajout d'une date
 if ($identifiantFormulaire == "createDate")
 {
     
@@ -90,7 +90,7 @@ VALUES
 
 CODESQL;
 
-        //FEEDBACK UTILISATEUR
+        //Feedback administrateur
         echo "La date de concert a bien été enregistrée.";
     }
     
@@ -102,5 +102,5 @@ CODESQL;
 //UPDATE D'UNE DATE DE CONCERT
 
 
-//ENVOI DES FORMULAIRES
+//Envoie d'instruction à la bdd 
 require "connectionDb.php";
