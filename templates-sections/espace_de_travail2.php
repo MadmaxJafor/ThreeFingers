@@ -1,5 +1,5 @@
 <div id="s2" class="navigation">
-    <h2> Contact </h2>
+    <h2 style="color:black;"> Contact </h2>
     <section id="formulaire-contact">
         <h3>Pour nous contacter, n'hésitez pas à remplir le formulaire suivant: </h3>
         <form id="create" action="#formulaire-contact" method="POST">

@@ -17,8 +17,8 @@ header
     left:0;
     width:100%;
     opacity:1;
-    padding:25px;
-    height:100px;
+    padding:5px;
+    height:85px;
     transition: all 0.5s linear;
     background-color:#181616;
     z-index: 999 ;
@@ -62,7 +62,7 @@ header h2
 }
 
 .navigation {
-    padding-top: 130px;
+    padding-top: 85px;
     margin-right: 0;
     margin-left: 0;
 }

@@ -17,7 +17,7 @@
                 <a href="administrator.php"><img src="assets/img/logodugroupeBlanc.png" alt="Logo du groupe" /></a>
                 <h1>RandomChild</h1>    
             </div>
-            <h2></h2>
+            <<!--<h2>description</h2>-->>
         </div>
         <nav> 
             <ul>
