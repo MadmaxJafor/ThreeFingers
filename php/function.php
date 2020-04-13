@@ -1,5 +1,6 @@
 <?php
 
+//fonction qui permet de filtrer l'identifiant des formulaires
 function filtrer($name="id")
 {
     $resultat = $_REQUEST[$name] ?? "";

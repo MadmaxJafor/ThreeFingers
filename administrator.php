@@ -165,9 +165,11 @@ CODEHTML;
 <!-- script JS permettant de supprimer un message en cliquant sur un bouton -->
 
 <script>
-    //quand je clique sur le bouton supprimer
+    //quand je clique sur le bouton supprimer, on copie le code html du formulaire prérempli à la place du formulaire du delete (vide)
     var listeBoutonDelete = document.querySelectorAll("button.delete");
+    //Boucle en js sur chaque bouton
     listeBoutonDelete.forEach(function(bouton){
+    //on va activer du code js sur le click
     bouton.addEventListener("click", function(event){
         //je recupère l'id de la ligne à supprimer, pour cela je recupère l'attribut data-id du bouton
         var idBouton = event.target.getAttribute("data-id");

@@ -5,7 +5,7 @@ require 'function.php';
 // Traitement du formulaire de contact
 if ($identifiantFormulaire == "create")
 {
-    
+    //création d'un tableau associatif (clés et variables)
     $tabAssoColonneValeur = [
         "nom"            => maj(filtrer("nom")),
         "prenom"         => maj(filtrer("prenom")),
@@ -13,16 +13,18 @@ if ($identifiantFormulaire == "create")
         "raison"         => filtrer("raison"),
         "message"        => filtrer("message"),
     ];
-    
+
+    //Raccourci permentant de créer des variables à partir des clés du tableau associatif
     extract($tabAssoColonneValeur);
 
+    //on vérifie que les varibles existes et ne sont pas vides
     if ($nom        != "" 
         && $prenom  != ""
         && $email   != ""
         && $raison  != ""
         && $message != "")
     { 
-        //Preparation requête SQL
+        //Preparation de la requête SQL
         $requeteSQL   =
 <<<CODESQL
 
