@@ -20,8 +20,10 @@
             <?php 
                 //Affectation de la valeur "create" à la requête
                 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
+                if ($identifiantFormulaire == "create") {
                 //Envoie du formulaire à la bdd
-                require "php/filtreformulaire.php";                        
+                require "php/filtreformulaire.php";  
+                }                      
             ?>
         </div>
         </form>

@@ -93,7 +93,7 @@ CODEHTML;
         <label for="adresse">Adresse</label>
         <textarea  cols="60" raws="6" name="adresse" required></textarea>
         <input type="hidden" name="identifiantFormulaire" value="createDate">
-        <button type="submit">Enregistrer la date</button>
+        <button type="submit">Enregistrez la date</button>
     </form>
 
 <!--Lister dates de concerts-->
