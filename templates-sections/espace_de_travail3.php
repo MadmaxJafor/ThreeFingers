@@ -16,11 +16,13 @@
 
     <?php
 
-require 'php\test.php';
-requete('concerts');
+require 'php/test.php';
+$requete = new requetesSQL();
+$test= $requete->selectTable('concerts');
+var_dump($test);
 
     $tabAssoColonneValeur = [];
-    require "connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
+    require "./connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
 
     $tabLigne = $pdoStatement->fetchAll(); // Je recupère mon tableau de resultat
 

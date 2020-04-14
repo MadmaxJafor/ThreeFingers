@@ -1,7 +1,9 @@
 <?php
-function requete($tableName){
 
-    $requeteSQL=
+class requetesSQL{
+static  function selectTable($tableName){
+
+ $requeteSQL=
 <<<CODESQL
 
     SELECT * FROM `$tableName`
@@ -9,4 +11,5 @@ function requete($tableName){
 
 CODESQL;
 return $requeteSQL;
+}
 }
