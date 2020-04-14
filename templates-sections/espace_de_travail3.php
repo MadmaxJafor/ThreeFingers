@@ -16,13 +16,8 @@
 
     <?php
 
-    $requeteSQL =
-<<<CODESQL
-
-    SELECT * FROM `concerts`
-    ORDER BY message DESC
-
-CODESQL;
+require 'php\test.php';
+requete('concerts');
 
     $tabAssoColonneValeur = [];
     require "connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
