@@ -20,31 +20,6 @@ require 'php/classes.php';
 $requete = new requetesSQL();
 $requeteSQL= $requete->selectTable('concerts');
 
-
-    $tabAssoColonneValeur = [];
-    require "./connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
-
-    $tabLigne = $pdoStatement->fetchAll(); // Je recupère mon tableau de resultat
-
-    $sql = 'SELECT * FROM concerts';
-    $req = $pdo->query($sql);
-    while($row = $req->fetch()) {
-     extract($row);
-        
-        echo
-<<<CODEHTML
-        <tr>
-            <td>$lieu</td>
-            <td>$date</td>
-            <td>$ville</td>
-            <td class ='adresses'>$adresse</td> 
-        </tr> 
-CODEHTML;
-
-    }    
-
-    $req->closeCursor();
-
     ?>
             </tbody>
         </table>
