@@ -1,6 +1,7 @@
 <?php
 
 class requetesSQL{
+
 static  function selectTable($tableName){
 
  $requeteSQL=
@@ -12,4 +13,5 @@ static  function selectTable($tableName){
 CODESQL;
 return $requeteSQL;
 }
+
 }

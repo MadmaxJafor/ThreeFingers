@@ -26,14 +26,10 @@
     <!-- Connection à la BDD pour lecture des messages reçus : READ -->
 
     <?php
+require 'php/classes.php';
 
-    $requeteSQL =
-<<<CODESQL
-
-    SELECT * FROM `OnePage`
-    ORDER BY message DESC
-
-CODESQL;
+$requete = new requetesSQL();
+$requeteSQL= $requete->selectTable('OnePage');
 
     $tabAssoColonneValeur = [];
     require "connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
@@ -116,13 +112,9 @@ CODEHTML;
 
     <?php
 
-    $requeteSQL =
-<<<CODESQL
 
-    SELECT * FROM `concerts`
-    ORDER BY message DESC
-
-CODESQL;
+$requete = new requetesSQL();
+$requeteSQL= $requete->selectTable('concerts');
 
     $tabAssoColonneValeur = [];
     require "connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
