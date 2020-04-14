@@ -18,8 +18,8 @@
 
 require 'php/test.php';
 $requete = new requetesSQL();
-$test= $requete->selectTable('concerts');
-var_dump($test);
+$requeteSQL= $requete->selectTable('concerts');
+
 
     $tabAssoColonneValeur = [];
     require "./connectionDb.php";      // Je charge le code PHP pour envoyer la requete 
